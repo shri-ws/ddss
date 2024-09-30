@@ -9,6 +9,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: grey;
     height: 100vh;
     width: 100%;
     display: flex;
