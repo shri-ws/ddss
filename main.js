@@ -1,7 +1,7 @@
 const danceStyles = [
     { style: "Classical", image: "static/img/classical.jpg", description: "Experience the grace of Bharatanatyam and Kathak." },
     { style: "Bollywood", image: "static/img/bollywood.jpg", description: "Dance to the latest Bollywood hits!" },
-    { style: "Zumba", image: "static/img/zumba.jpg", description: "Get fit with fun and energetic Zumba routines." },
+    { style: "Zumba", image: "static/img/zumba1.jpg", description: "Get fit with fun and energetic Zumba routines." },
     { style: "Mehndi", image: "static/img/mehndi.jpg", description: "Celebrate with traditional Mehndi dance performances." },
     { style: "Wedding Choreography", image: "static/img/wedding.jpg", description: "Perfect moves for your special day." }
 ];
