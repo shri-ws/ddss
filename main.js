@@ -23,4 +23,4 @@ function changeDanceStyle() {
 changeDanceStyle();
 
 // Automatically change style every 5 seconds
-setInterval(changeDanceStyle, 5001);
+setInterval(changeDanceStyle, 5000);
