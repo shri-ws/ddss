@@ -1,19 +1,26 @@
-const images = [
-    "static/img/slideshow/slideshow1.jpg",
-    "static/img/slideshow/slideshow2.jpg",
-    "static/img/slideshow/slideshow3.jpg"
+const danceStyles = [
+    { style: "Classical", image: "static/img/classical.jpg", description: "Experience the grace of Bharatanatyam and Kathak." },
+    { style: "Bollywood", image: "static/img/bollywood.jpg", description: "Dance to the latest Bollywood hits!" },
+    { style: "Zumba", image: "static/img/zumba.jpg", description: "Get fit with fun and energetic Zumba routines." },
+    { style: "Mehndi", image: "static/img/mehndi.jpg", description: "Celebrate with traditional Mehndi dance performances." },
+    { style: "Wedding Choreography", image: "static/img/wedding.jpg", description: "Perfect moves for your special day." }
 ];
 
-let currentImageIndex = 0;
+let currentStyleIndex = 0;
 const homeSection = document.querySelector('#home');
+const styleTitle = document.querySelector('#style-title');
+const styleDescription = document.querySelector('#style-description');
 
-function changeBackground() {
-    homeSection.style.backgroundImage = `url(${images[currentImageIndex]})`;
-    currentImageIndex = (currentImageIndex + 1) % images.length;
+function changeDanceStyle() {
+    const currentStyle = danceStyles[currentStyleIndex];
+    homeSection.style.backgroundImage = `url(${currentStyle.image})`;
+    styleTitle.textContent = currentStyle.style;
+    styleDescription.textContent = currentStyle.description;
+    currentStyleIndex = (currentStyleIndex + 1) % danceStyles.length;
 }
 
-// Set initial background
-changeBackground();
+// Set initial style
+changeDanceStyle();
 
-// Automatically change the background every 5 seconds
-setInterval(changeBackground, 5001);
+// Automatically change style every 5 seconds
+setInterval(changeDanceStyle, 5001);
