@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhwani Dance School</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">Dhwani Dance School</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#classes">Classes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Home Section with Slideshow -->
+<section id="home" class="d-flex align-items-center vh-100 text-white text-center slideshow">
+    <div class="container">
+        <h1>Welcome to Dhwani Dance School</h1>
+        <p>Unleash Your Inner Dancer</p>
+        <a href="#classes" class="btn btn-light mt-4">Explore Our Classes</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">About Us</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <p>Dhwani Dance School is a center for excellence in classical and contemporary dance forms. Our mission is to spread the joy of dance to all age groups and skill levels.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="{{ url_for('static', filename='img/about.jpg') }}" class="img-fluid" alt="About Dhwani Dance School">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Classes Section -->
+<section id="classes" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Classes</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <h3>Classical Dance</h3>
+                <p>We offer Bharatanatyam, Kathak, and other classical dance forms, focusing on technique and tradition.</p>
+            </div>
+            <div class="col-lg-4">
+                <h3>Contemporary Dance</h3>
+                <p>Our contemporary classes blend various styles to create modern, expressive performances.</p>
+            </div>
+            <div class="col-lg-4">
+                <h3>Beginner's Dance</h3>
+                <p>These classes are designed for beginners of all ages, helping them find joy in movement.</p>
+            </div>
+            <div class="col-lg-4">
+                <h3>Kids Batch</h3>
+                <p>Special dance classes designed for children, focusing on basic movements, coordination, and fun activities.</p>
+            </div>
+            <div class="col-lg-4">
+                <h3>Girls Batch</h3>
+                <p>Exclusive batches for girls to explore various dance forms in a friendly and encouraging environment.</p>
+            </div>
+            <div class="col-lg-4">
+                <h3>Ladies Batch</h3>
+                <p>Special batches designed for ladies of all ages who want to experience the joy of dancing while staying fit.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Instagram Feed Section (Full Width) -->
+<section id="instagram" class="py-5">
+    <div class="container-fluid">
+        <h2 class="text-center mb-4">Follow Us on Instagram</h2>
+
+        <!-- SnapWidget Embed (Full Width) -->
+        <iframe src="https://snapwidget.com/embed/1080658" class="snapwidget-widget w-100" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; height:510px;" title="Posts from Instagram"></iframe>
+    </div>
+</section>
+
+<!-- Contact Section with Google Map and Sign-Up Form -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us & Sign Up</h2>
+        <div class="row">
+            <!-- Google Map -->
+            <div class="col-lg-6 mb-4">
+                <h4>Find Us on the Map</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16360.411092903945!2d80.9527712!3d26.9220018!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957003bd55a0f%3A0xd4e89ff373d49c69!2sDhwani%20Dance%20School!5e1!3m2!1sen!2sin!4v1727711292722!5m2!1sen!2sin" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- Sign-Up Form -->
+             <div class="col-lg-6">
+                <h4>Sign Up for Dance Classes</h4>
+                <iframe src="https://docs.google.com/forms/d/1scqDaj4hBoO0mbttCTDUo8ZZUvebQ6I3pCmevv06FKQ/edit?usp=drivesdk" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                
+                <!-- WhatsApp Button -->
+                <div class="mt-4">
+                    <a href="https://wa.me/919453561588" target="_blank" class="btn btn-success btn-lg w-100">
+                        <i class="bi bi-whatsapp"></i> Chat with Us on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <p>&copy; 2024 Dhwani Dance School. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Slideshow JavaScript -->
+<script>
+    const images = {{ slideshow_images|tojson }};
+    let currentImageIndex = 0;
+    const homeSection = document.querySelector('#home');
+
+    function changeBackground() {
+        homeSection.style.backgroundImage = `url(${images[currentImageIndex]})`;
+        homeSection.style.backgroundSize = 'cover';
+        homeSection.style.backgroundPosition = 'center';
+        homeSection.style.transition = 'background-image 1s ease-in-out';
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+    }
+
+    // Set initial background
+    changeBackground();
+
+    // Automatically change the background every 5 seconds
+    setInterval(changeBackground, 5001);
+</script>
+</body>
+</html>
