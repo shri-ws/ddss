@@ -11,8 +11,7 @@ function startSlideshow(images) {
     setInterval(() => changeBackground(images), 5000);
 }
 
-// Fetch images list from the backend and start slideshow
-fetch('/images')  // Backend API endpoint returning image URLs
+fetch('/images')  // Fetch image URLs from the backend
     .then(response => response.json())
     .then(images => {
         startSlideshow(images);
