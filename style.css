@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Century Gothic, sans-serif;
     padding-top: 70px; /* Offset for fixed navbar */
 }
 
@@ -31,7 +31,7 @@ footer {
 
 #home p {
     font-size: 2.5rem;
-    align: centre;
+    align: justify;
 }
 
 /* Classes Section */
