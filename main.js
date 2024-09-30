@@ -8,7 +8,7 @@ function changeBackground(images) {
 
 function startSlideshow(images) {
     changeBackground(images);
-    setInterval(() => changeBackground(images), 5000);
+    setInterval(() => changeBackground(images), 5001);
 }
 
 fetch('/images')  // Fetch image URLs from the backend
