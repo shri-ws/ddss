@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    padding-top: 70px; /* Offset for fixed navbar */
+    font-family: Century-gothic, sans-serif;
+    padding-top: 90px; /* Offset for fixed navbar */
 }
 
 /* Slideshow */
@@ -29,7 +29,8 @@ footer {
 }
 
 #home p {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    text-align: justify;
 }
 
 /* Classes Section */
