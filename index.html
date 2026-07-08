@@ -3,147 +3,703 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhwani Dance School</title>
-   
-
-    <!-- Link to Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Dhwani Dance School | Premium Online Bharatanatyam Platform</title>
+    <meta name="description" content="Rigorous 1-on-1 online Bharatanatyam training and 8-year certification. Optimized for global students with native timezone scheduling and No-Cost credit card EMI.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#home">Dhwani Dance School</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#classes">Classes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-accent">Dhwani</span> Dance
         </div>
-    </div>
-</nav>
+        <nav class="nav-links">
+            <a href="#founder">The Founder</a>
+            <a href="#social">Proof Grid</a>
+            <a href="#faq">FAQs</a>
+        </nav>
+        
+        <div class="header-auth-controls">
+            <!-- Theme Toggle Button -->
+            <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                <i class="fa-solid fa-moon" id="theme-icon"></i>
+            </button>
 
-<!-- Home Section with Slideshow -->
-<section id="home" class="d-flex align-items-center vh-100 text-white text-center slideshow">
-    <div class="container">
-        <h1 id="style-title">Welcome to Dhwani Dance School</h1>
-        <p id="style-description">Unleash Your Inner Dancer</p>
-        <a href="#classes" class="btn btn-light mt-4">Explore Our Classes</a>
-    </div>
-</section>
+            <!-- Logged Out Controls -->
+            <div class="logged-out-actions" id="logged-out-actions">
+                <button class="btn btn-text btn-sm" id="header-login-trigger">Log In</button>
+                <button class="btn btn-outline btn-sm open-booking-trigger" id="header-cta">Register Now</button>
+            </div>
 
-<!-- About Section -->
-<section id="about" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">About Us</h2>
-        <div class="row">
-            <div class="col-lg-6" font-size="14px">
-                <p>Dhwani Dance School is a vibrant and dedicated space for nurturing the art of dance. It offers comprehensive dance coaching, encouraging students to not only hone their dancing skills but also boost their confidence and creativity. The school likely engages students in a variety of dance forms, creating a balanced environment for learning and self-expression. Through regular classes, the school emphasizes personal growth, ensuring that each session introduces new techniques, knowledge, and fosters self-assurance in students.
-
-Moreover, Dhwani Dance School seems to integrate elements of discipline, strength, and empowerment, likely focusing on holistic development, particularly for girls, reinforcing their self-reliance and potential to excel in various fields of life. Competitions, themed events, and performances might be a part of the school’s activities, providing students opportunities to showcase their talent and creativity.</p>
-            </div>
-            <div class="col-lg-6">
-                <img src="static/img/about.jpg" class="img-fluid" alt="About Dhwani Dance School">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Classes Section -->
-<section id="classes" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-4">Our Classes</h2>
-        <div class="row">
-            <div class="col-lg-4">
-                <h3>Classical Dance</h3>
-                <p>We offer Bharatanatyam, Kathak, and other classical dance forms, focusing on technique and tradition.</p>
-            </div>
-            <div class="col-lg-4">
-                <h3>Contemporary Dance</h3>
-                <p>Our contemporary classes blend various styles to create modern, expressive performances.</p>
-            </div>
-            <div class="col-lg-4">
-                <h3>Beginner's Dance</h3>
-                <p>These classes are designed for beginners of all ages, helping them find joy in movement.</p>
-            </div>
-            <div class="col-lg-4">
-                <h3>Kids Batch</h3>
-                <p>Special dance classes designed for children, focusing on basic movements, coordination, and fun activities.</p>
-            </div>
-            <div class="col-lg-4">
-                <h3>Girls Batch</h3>
-                <p>Exclusive batches for girls to explore various dance forms in a friendly and encouraging environment.</p>
-            </div>
-            <div class="col-lg-4">
-                <h3>Ladies Batch</h3>
-                <p>Special batches designed for ladies of all ages who want to experience the joy of dancing while staying fit.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Instagram Feed Section (Full Width) -->
-<section id="instagram" class="py-5">
-    <div class="container-fluid">
-        <h2 class="text-center mb-4">Follow Us on Instagram</h2>
-
-        <!-- SnapWidget Embed (Full Width) -->
-        <iframe src="https://snapwidget.com/embed/1080658" class="snapwidget-widget w-100" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; height:510px;" title="Posts from Instagram"></iframe>
-    </div>
-</section>
-
-<!-- Contact Section with Google Map and Sign-Up Form -->
-<section id="contact" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-4">Contact Us & Sign Up</h2>
-        <div class="row">
-            <!-- Google Map -->
-            <div class="col-lg-6 mb-4">
-                <h4>Find Us on the Map</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16360.411092903945!2d80.9527712!3d26.9220018!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957003bd55a0f%3A0xd4e89ff373d49c69!2sDhwani%20Dance%20School!5e1!3m2!1sen!2sin!4v1727711292722!5m2!1sen!2sin" 
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <!-- Sign-Up Form -->
-             <div class="col-lg-6">
-                <h4>Sign Up for Dance Classes</h4>
-               <iframe src="https://docs.google.com/forms/d/1scqDaj4hBoO0mbttCTDUo8ZZUvebQ6I3pCmevv06FKQ/viewform?embedded=true" width="100%" height="300" frameborder="0">Loading…</iframe>
-                <!-- WhatsApp Button -->
-                <div class="mt-4">
-                   <a href="https://wa.me/919453561588" target="_blank" class="btn btn-success btn-lg w-100">
-                        <i class="bi bi-whatsapp"></i> Chat with Us on WhatsApp
-                    </a>
+            <!-- Logged In Controls (dropdown) -->
+            <div class="user-profile-menu hidden" id="user-profile-menu">
+                <button class="profile-trigger" id="profile-trigger-btn">
+                    <div class="profile-avatar"><i class="fa-solid fa-user"></i></div>
+                    <span id="header-username">Sarah</span>
+                    <i class="fa-solid fa-chevron-down profile-chevron"></i>
+                </button>
+                <div class="profile-dropdown-content" id="profile-dropdown-content">
+                    <a href="#member-dashboard" id="dropdown-dash-link"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+                    <hr>
+                    <button id="header-logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Log Out</button>
                 </div>
             </div>
         </div>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="badge">Female-Exclusive Classical Heritage</div>
+                <h1>Classical Grace.<br><span class="text-gradient">Global Excellence.</span></h1>
+                <p class="hero-tagline">Strictly 1-on-1 private Bharatanatyam instruction calibrated for Western time zones. Experience elite posture refinement, mudras, and expressions taught by master gurus.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-lg open-booking-trigger" id="hero-cta-main">
+                        <span>Claim Your 3-Day Demo Pass ($50)</span>
+                        <i class="fa-solid fa-arrow-right icon-right"></i>
+                    </button>
+                    <div class="cta-subtext">
+                        <i class="fa-solid fa-credit-card"></i> 0% Interest CC Installments (EMI) Available
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-video-container">
+                <div class="video-wrapper">
+                    <!-- Ken Burns Slideshow -->
+                    <div class="video-slideshow">
+                        <div class="slide active" style="background-image: url('hero_banner.jpg');"></div>
+                        <div class="slide" style="background-image: url('founder.jpg');"></div>
+                    </div>
+                    <!-- Custom interactive video simulation -->
+                    <div class="video-overlay" id="video-overlay">
+                        <div class="video-title">Founder's Mudra Performance</div>
+                        <button class="sound-toggle" id="sound-btn">
+                            <i class="fa-solid fa-volume-xmark" id="sound-icon"></i> <span id="sound-text">Tap for Sound</span>
+                        </button>
+                    </div>
+                    <!-- Autoplay video simulator using canvas for premium dynamic rendering -->
+                    <canvas id="video-canvas"></canvas>
+                    <audio id="hero-audio" loop src="https://assets.mixkit.co/active_storage/sfx/2568/2568-84.wav"></audio> 
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder's Authority Anchor Card -->
+        <section class="section founder-section reveal" id="founder">
+            <div class="section-title-container">
+                <div class="section-subtitle">THE DHWANI HERITAGE</div>
+                <h2>The Founder's Authority Anchor</h2>
+            </div>
+            
+            <div class="founder-card">
+                <div class="founder-image-wrapper">
+                    <img src="founder.jpg" alt="Ms. Pallavi Mishra - Founder of Dhwani Dance School" class="founder-img">
+                    <div class="founder-badge">
+                        <span class="badge-number">15+</span>
+                        <span class="badge-text">Years Teaching</span>
+                    </div>
+                </div>
+                <div class="founder-details">
+                    <div class="founder-title">FOUNDER & ARTISTIC DIRECTOR</div>
+                    <h3>Ms. Pallavi Mishra</h3>
+                    <p class="founder-bio">
+                        "Bharatanatyam is not just a dance; it is a spiritual geometry. Standardizing this ancient heritage for global students requires absolute precision. Our curriculum is tailored for international learners who seek academic rigor combined with flexible, modern execution. Every lesson is live, individual, and focused purely on your growth."
+                    </p>
+                    <div class="founder-bullets">
+                        <div class="bullet-item">
+                            <i class="fa-solid fa-certificate bullet-icon"></i>
+                            <div>
+                                <strong>Standardized Board Syllabus:</strong> Adaptable for academic credit or high-profile certifications.
+                            </div>
+                        </div>
+                        <div class="bullet-item">
+                            <i class="fa-solid fa-users bullet-icon"></i>
+                            <div>
+                                <strong>1-on-1 Private Arena:</strong> Zero crowded screens. Customized postural correction every single second.
+                            </div>
+                        </div>
+                        <div class="bullet-item">
+                            <i class="fa-solid fa-globe bullet-icon"></i>
+                            <div>
+                                <strong>500+ Global Graduates:</strong> Training students in North America, the UK, and Europe since 2018.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof & Engagement Grid -->
+        <section class="section social-section reveal" id="social">
+            <div class="section-title-container">
+                <div class="section-subtitle">PROVEN RAPPORT</div>
+                <h2>Student Engagement Grid</h2>
+                <p class="section-desc">Explore highlights from our global classes, student spotlights, and classical tutorial reels.</p>
+            </div>
+            
+            <div class="social-grid">
+                <!-- Instagram Card -->
+                <div class="social-card instagram">
+                    <a href="https://www.instagram.com/dds.artists" target="_blank" class="social-card-link">
+                        <div class="card-media">
+                            <div class="instagram-overlay">
+                                <i class="fa-brands fa-instagram icon-social"></i>
+                                <div class="stats">
+                                    <span><i class="fa-solid fa-heart"></i> 14.2k</span>
+                                    <span><i class="fa-solid fa-comment"></i> 340</span>
+                                </div>
+                            </div>
+                            <div class="media-placeholder" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('hero_banner.jpg'); background-size: cover; background-position: center;">
+                                <span class="play-btn-circle"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <div class="card-caption">
+                            <strong>@dds.artists</strong> Postural alignment check: Refining the classic Aramandi stance. #bharatanatyam #ddsartists
+                        </div>
+                        <div class="views-tag">182K Views</div>
+                    </div>
+                </div>
+
+                <!-- YouTube Card -->
+                <div class="social-card youtube">
+                    <a href="https://www.youtube.com/@dhwanidanceschool119" target="_blank" class="social-card-link">
+                        <div class="card-media">
+                            <div class="youtube-overlay">
+                                <i class="fa-brands fa-youtube icon-social"></i>
+                                <div class="stats">
+                                    <span><i class="fa-solid fa-thumbs-up"></i> 8.4k</span>
+                                    <span><i class="fa-solid fa-eye"></i> 95k</span>
+                                </div>
+                            </div>
+                            <div class="media-placeholder" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('founder.jpg'); background-size: cover; background-position: center 20%;">
+                                <span class="play-btn-circle"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <div class="card-caption">
+                            <strong>dhwani dance school119</strong> Mudra Series: 28 Single-Hand Gestures (Asamyuta Hastas) for Beginners.
+                        </div>
+                        <div class="views-tag">95K Views</div>
+                    </div>
+                </div>
+
+                <!-- Instagram Card 2 -->
+                <div class="social-card instagram">
+                    <a href="https://www.instagram.com/dds.artists" target="_blank" class="social-card-link">
+                        <div class="card-media">
+                            <div class="instagram-overlay">
+                                <i class="fa-brands fa-instagram icon-social"></i>
+                                <div class="stats">
+                                    <span><i class="fa-solid fa-heart"></i> 9.8k</span>
+                                    <span><i class="fa-solid fa-comment"></i> 192</span>
+                                </div>
+                            </div>
+                            <div class="media-placeholder" style="background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);">
+                                <div class="mudra-graphic">
+                                    <i class="fa-solid fa-hands-praying mudra-icon-graphic"></i>
+                                </div>
+                                <span class="play-btn-circle"><i class="fa-solid fa-play"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <div class="card-caption">
+                            <strong>@dds.artists</strong> Step-by-step tutorial: Master the Natyarambha posture at home. #dancetutorial #dds
+                        </div>
+                        <div class="views-tag">112K Views</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- High-Converting FAQ Grid -->
+        <section class="section faq-section reveal" id="faq">
+            <div class="section-title-container">
+                <div class="section-subtitle">YOUR QUESTIONS ANSWERED</div>
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-desc">Addressing the psychological hesitations of global parents and students.</p>
+            </div>
+            
+            <div class="faq-accordion-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can a 7-year-old child actually learn precise Bharatanatyam form over a webcam?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Because our system is strictly 1-on-1 private instruction, our 15+ year expert gurus monitor every posture, angle, and hand movement in real-time. We do not use crowded group video grids where students get lost; your daughter receives individual focus and customized corrections every single second.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do the time zones work if the guru is hosting from India?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our booking platform is fully automated and synchronized with your local time zone (whether you are in New York, Toronto, London, or Los Angeles). You simply pick the slot that fits your schedule, and our teachers align their hours to match your availability seamlessly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is the difference between the 8-Year Certification and the Extracurricular track?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The 8-Year Certification Program is a structured, rigorous academic system modeled after premium Indian dance boards, requiring examinations at the end of each tier. The Extracurricular Path utilizes the exact same world-class teacher expertise but is adapted for students who want to enjoy the art form as a cultural hobby, fitness routine, or creative outlet without the stress of formal exams.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How does the No-Cost Credit Card EMI option work for the $1,599 annual fee?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>At checkout, selecting our Credit Card Installment option splits the premium annual tuition into 12 predictable payments of $133.25 per month. Your bank handles the monthly distribution at 0% interest, while your spot in the professional 8-year system is fully secured for the entire year upfront.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Personalized Dashboard (Initially hidden, revealed on successful checkout/login) -->
+        <section class="section dashboard-section hidden" id="member-dashboard">
+            <div class="dashboard-banner">
+                <div class="dashboard-welcome">
+                    <div class="user-avatar-placeholder">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div>
+                        <h2>Namaste, <span id="dash-username">Sarah</span>!</h2>
+                        <p class="dash-subtitle">Your private Bharatanatyam arena is unlocked.</p>
+                    </div>
+                </div>
+                <div class="dashboard-status-pill">
+                    <span class="status-indicator animate-pulse"></span> <span id="dash-status-text">3-Day Pass Active</span>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="dash-card schedule-card">
+                    <h3><i class="fa-solid fa-calendar-days text-gradient"></i> Scheduled Live Demos</h3>
+                    <div class="schedule-details">
+                        <div class="scheduled-time-box">
+                            <div class="day" id="dash-day">TBD</div>
+                            <div class="time" id="dash-time">TBD</div>
+                            <div class="tz-label" id="dash-tz">EST</div>
+                        </div>
+                        <div class="instructor-info">
+                            <div class="dash-avatar-wrapper">
+                                <img src="founder.jpg" class="dash-guru-img" alt="Guru assigned">
+                            </div>
+                            <div>
+                                <h4 id="dash-guru-name">Ms. Pallavi Mishra</h4>
+                                <p>Lead Teacher & Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="classroom-cta-box">
+                        <button class="btn btn-primary btn-block btn-pulse" onclick="alert('Launching secure online Zoom / Google Meet classroom environment...')">
+                            <i class="fa-solid fa-video"></i> Enter Private Classroom
+                        </button>
+                        <p class="classroom-note">Link activates 10 minutes prior to session</p>
+                    </div>
+                </div>
+
+                <div class="dash-card syllabus-card">
+                    <h3><i class="fa-solid fa-book-open text-gradient"></i> Academy Resources</h3>
+                    <ul class="resource-list">
+                        <li>
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <div>
+                                <strong>Level 1 Syllabus (Adavus)</strong>
+                                <span>PDF Guide (1.2 MB)</span>
+                            </div>
+                            <a href="#" class="download-link" onclick="event.preventDefault(); alert('Downloading Level 1 Syllabus PDF...');"><i class="fa-solid fa-download"></i></a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-music"></i>
+                            <div>
+                                <strong>Tala Audios: Roopaka & Adi Tala</strong>
+                                <span>MP3 Practice Beats</span>
+                            </div>
+                            <a href="#" class="download-link" onclick="event.preventDefault(); alert('Downloading Practice Audio Files...');"><i class="fa-solid fa-download"></i></a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-image"></i>
+                            <div>
+                                <strong>Mudra Chart: Hand Positions</strong>
+                                <span>PNG High-Res Poster</span>
+                            </div>
+                            <a href="#" class="download-link" onclick="event.preventDefault(); alert('Downloading Mudras Wall Chart...');"><i class="fa-solid fa-download"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="dash-card billing-card">
+                    <h3><i class="fa-solid fa-credit-card text-gradient"></i> Billing & Account</h3>
+                    <div class="billing-status">
+                        <div class="billing-row">
+                            <span>Current Plan:</span>
+                            <strong id="dash-plan-name">3-Day Pass</strong>
+                        </div>
+                        <div class="billing-row">
+                            <span>Total Billed:</span>
+                            <strong id="dash-plan-price">$50.00</strong>
+                        </div>
+                        <div class="billing-row">
+                            <span>Payment Method:</span>
+                            <strong><i class="fa-brands fa-cc-stripe"></i> Stripe Visa •••• 4242</strong>
+                        </div>
+                    </div>
+                    <div class="billing-upgrade-promo" id="upgrade-promo-box">
+                        <h4>Secure the Full Program</h4>
+                        <p>Lock in the 8-Year Certification Program for just <strong>$133.25/month</strong> (0% Interest CC Installments).</p>
+                        <button class="btn btn-outline btn-block btn-sm" onclick="alert('Redirecting to Stripe customer portal to upgrade subscription...')">Upgrade Subscription</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Dhwani Dance School. All Rights Reserved. Specializing in global 1-on-1 classical dance instruction.</p>
+    </footer>
+
+    <!-- Interactive Checkout & Registration Modal Backdrop -->
+    <div class="modal-backdrop" id="modal-backdrop">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            
+            <!-- Modal Stepper Header -->
+            <div class="modal-stepper">
+                <div class="step-indicator active" id="step-1-indicator">
+                    <span class="step-num">1</span>
+                    <span class="step-label">Auth</span>
+                </div>
+                <div class="step-line" id="line-1"></div>
+                <div class="step-indicator" id="step-2-indicator">
+                    <span class="step-num">2</span>
+                    <span class="step-label">Booking</span>
+                </div>
+                <div class="step-line" id="line-2"></div>
+                <div class="step-indicator" id="step-3-indicator">
+                    <span class="step-num">3</span>
+                    <span class="step-label">Secure Checkout</span>
+                </div>
+                <div class="step-line" id="line-3"></div>
+                <div class="step-indicator" id="step-4-indicator">
+                    <span class="step-num">4</span>
+                    <span class="step-label">Pipeline</span>
+                </div>
+            </div>
+
+            <!-- STEP 1: OAuth Authentication -->
+            <div class="modal-step-content" id="step-1-content">
+                <h3 class="modal-step-title">Frictionless Authentication</h3>
+                <p class="modal-step-subtitle">Instantly verify your registration details via Google Identity Services to capture security metadata.</p>
+                
+                <div class="google-auth-box">
+                    <button class="btn btn-google btn-block" id="google-auth-btn">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google logo" class="google-logo">
+                        <span>Continue with Google</span>
+                    </button>
+                    <p class="oauth-assurance"><i class="fa-solid fa-lock"></i> Your primary email and full name will be retrieved securely.</p>
+                </div>
+                
+                <!-- Mock Sign in progress spinner -->
+                <div class="spinner-overlay hidden" id="auth-spinner">
+                    <div class="spinner"></div>
+                    <p>Authenticating with Google Services...</p>
+                </div>
+            </div>
+
+            <!-- STEP 2: Time Zone Smart-Booking -->
+            <div class="modal-step-content hidden" id="step-2-content">
+                <h3 class="modal-step-title">Location-Aware Scheduling</h3>
+                <p class="modal-step-subtitle">Slots are dynamically adjusted to your local time zone based on Indian Standard Time availability.</p>
+                
+                <div class="timezone-info-banner">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <div>
+                        <span>System Detected Timezone:</span>
+                        <strong id="client-timezone">America/New_York (EST)</strong>
+                    </div>
+                </div>
+
+                <div class="booking-scheduler">
+                    <label class="input-label">Select a Class Demo Slot:</label>
+                    <div class="days-container" id="days-wrapper">
+                        <!-- Filled by JS -->
+                    </div>
+                    <div class="slots-container" id="slots-wrapper">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+
+                <div class="modal-footer-nav">
+                    <button class="btn btn-text" id="back-to-step-1"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                    <button class="btn btn-primary" id="confirm-booking-btn" disabled>Continue to Payment</button>
+                </div>
+            </div>
+
+            <!-- STEP 3: Premium Checkout Node -->
+            <div class="modal-step-content hidden" id="step-3-content">
+                <h3 class="modal-step-title">Secure Subscription Checkout</h3>
+                <p class="modal-step-subtitle">Processed via Stripe API Gateway. Instant credentials generated on authorization.</p>
+
+                <div class="checkout-layout">
+                    <!-- Pricing selection -->
+                    <div class="pricing-selector-container">
+                        <label class="input-label">Choose Your Entrance Pass:</label>
+                        <div class="pricing-cards">
+                            <div class="pricing-card-option active" id="pass-demo" data-price="50" data-name="3-Day Pass">
+                                <div class="card-radio"><span class="radio-dot"></span></div>
+                                <div class="card-pricing-details">
+                                    <span class="plan-badge">Intro Pass</span>
+                                    <h4>3-Class Demo Pass</h4>
+                                    <div class="price-value">$50.00 <span class="frequency">one-time</span></div>
+                                    <p class="plan-features">Access to private 1-on-1 assessment and 3 core orientation sessions.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pricing-card-option" id="pass-yearly" data-price="1599" data-name="8-Year Certification Pass">
+                                <div class="card-radio"><span class="radio-dot"></span></div>
+                                <div class="card-pricing-details">
+                                    <span class="plan-badge premium">Popular</span>
+                                    <h4>Yearly Certification Pass</h4>
+                                    <div class="price-value">$1,599 <span class="frequency">/ year</span></div>
+                                    <div class="emi-promo">
+                                        <i class="fa-solid fa-percent"></i> <strong>EMI Option:</strong> $133.25/mo for 12 months with 0% interest.
+                                    </div>
+                                    <p class="plan-features">Complete 8-year exam pathway, certified examiner validation, full support.</p>
+                                </div>
+                            </div>
+
+                            <div class="pricing-card-option" id="pass-local" data-price="local" data-name="Local Indian Course">
+                                <div class="card-radio"><span class="radio-dot"></span></div>
+                                <div class="card-pricing-details">
+                                    <span class="plan-badge">Regional</span>
+                                    <h4>Local Indian Batches</h4>
+                                    <div class="price-value" id="local-price-display">₹15,000 <span class="frequency">/ course</span></div>
+                                    <div class="local-select-wrapper" style="margin-top: 8px;" onclick="event.stopPropagation();">
+                                        <select id="local-course-select" class="stripe-input" style="padding: 4px 8px; font-size: 0.8rem; background: var(--bg-card); color: var(--text-white); border-color: var(--border-color); cursor: pointer;">
+                                            <option value="">Loading courses...</option>
+                                        </select>
+                                    </div>
+                                    <p class="plan-features">Offline group training at our Lucknow studio (₹10,000 - ₹15,000 depending on duration).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Checkout Form details -->
+                    <div class="stripe-form-panel">
+                        <div class="stripe-form-header">
+                            <div class="stripe-logo"><i class="fa-brands fa-cc-stripe"></i> STRIPE CHECKOUT</div>
+                            <div class="lock-indicator"><i class="fa-solid fa-lock"></i> 256-bit AES</div>
+                        </div>
+                        
+                        <div class="stripe-input-row">
+                            <label class="form-label">Name on Card</label>
+                            <input type="text" class="stripe-input" id="card-name" value="Sarah Jenkins">
+                        </div>
+
+                        <div class="stripe-input-row">
+                            <label class="form-label">Card Number</label>
+                            <!-- Note: Stripe Elements iframes would mount securely here in production -->
+                            <div class="stripe-input-icon-wrapper">
+                                <input type="text" class="stripe-input" id="card-number" value="4242 4242 4242 4242" placeholder="4242 4242 4242 4242">
+                                <i class="fa-brands fa-cc-visa stripe-card-brand"></i>
+                            </div>
+                        </div>
+
+                        <div class="stripe-flex-row">
+                            <div class="stripe-input-col">
+                                <label class="form-label">Expiration Date</label>
+                                <input type="text" class="stripe-input" id="card-expiry" value="12 / 28" placeholder="MM / YY">
+                            </div>
+                            <div class="stripe-input-col">
+                                <label class="form-label">CVC</label>
+                                <input type="text" class="stripe-input" id="card-cvc" value="424" placeholder="CVC">
+                            </div>
+                        </div>
+
+                        <div class="wa-opt-in-wrapper" style="margin-top: 15px; text-align: left; padding: 10px 0;">
+                            <label class="wa-checkbox-label" style="display: flex; gap: 10px; font-size: 0.8rem; color: #6b7c93; cursor: pointer; line-height: 1.4;">
+                                <input type="checkbox" id="whatsapp-consent" checked style="margin-top: 2px;">
+                                <span>I consent to receive class invites and reminders on WhatsApp. (Meta API GDPR Compliant)</span>
+                            </label>
+                        </div>
+
+                        <div class="payment-summary-line">
+                            <span>Amount Due Now:</span>
+                            <span class="summary-amount" id="checkout-amount-display">$50.00</span>
+                        </div>
+
+                        <div class="modal-footer-nav" style="margin-top: 15px; padding-top: 0;">
+                            <button class="btn btn-text btn-sm" id="back-to-step-2"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                            <button class="btn btn-primary btn-block" id="submit-payment-btn">
+                                <i class="fa-solid fa-shield-halved"></i> Authorize & Secure Spot
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stripe loading spinner -->
+                <div class="spinner-overlay hidden" id="payment-spinner">
+                    <div class="spinner"></div>
+                    <p id="payment-loading-text">Contacting Stripe Payment Gateway...</p>
+                </div>
+            </div>
+
+            <!-- STEP 4: Post-Payment Pipeline & Simulated Webhooks -->
+            <div class="modal-step-content hidden" id="step-4-content">
+                <div class="success-header">
+                    <div class="success-icon-wrapper">
+                        <i class="fa-solid fa-circle-check success-check"></i>
+                    </div>
+                    <h3>Payment Authorized Successfully!</h3>
+                    <p class="success-lead">Namaste, your transaction has cleared. Launching backend API integrations...</p>
+                </div>
+
+                <!-- Webhooks real-time display panel -->
+                <div class="webhooks-log-panel">
+                    <h4 class="webhook-panel-title"><i class="fa-solid fa-circle-nodes"></i> Triggered Webhooks (API Logs)</h4>
+                    
+                    <div class="webhook-item pending" id="webhook-on-screen">
+                        <div class="webhook-icon"><i class="fa-solid fa-desktop"></i></div>
+                        <div class="webhook-details">
+                            <h5>On-Screen Success UI</h5>
+                            <p class="webhook-desc">Initializing member dashboard & teacher assignment schedule...</p>
+                        </div>
+                        <div class="webhook-status"><span class="wh-spinner"></span></div>
+                    </div>
+
+                    <div class="webhook-item pending" id="webhook-email">
+                        <div class="webhook-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="webhook-details">
+                            <h5>Transactional Welcome Kit</h5>
+                            <p class="webhook-desc">Sending welcome kit and calendar invite to <span id="webhook-email-val">sarah.jenkins@gmail.com</span>...</p>
+                        </div>
+                        <div class="webhook-status"><span class="wh-spinner"></span></div>
+                    </div>
+
+                    <div class="webhook-item pending" id="webhook-whatsapp">
+                        <div class="webhook-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div class="webhook-details">
+                            <h5>Meta Business API (WhatsApp)</h5>
+                            <p class="webhook-desc" id="wa-webhook-description">Pushing class verification notification to customer mobile...</p>
+                        </div>
+                        <div class="webhook-status"><span class="wh-spinner"></span></div>
+                    </div>
+                </div>
+
+                <!-- Interactive webhook payload messages simulation -->
+                <div class="webhook-payloads-container">
+                    <div class="mock-device mock-email hidden" id="mock-email-device">
+                        <div class="mock-device-header"><i class="fa-solid fa-envelope"></i> Inbox Preview</div>
+                        <div class="mock-email-content">
+                            <p><strong>From:</strong> Dhwani Dance School &lt;admissions@dhwani.dance&gt;</p>
+                            <p><strong>To:</strong> <span id="email-to-name">Sarah</span></p>
+                            <p><strong>Subject:</strong> Your Bharatanatyam Private Arena is Ready!</p>
+                            <hr>
+                            <p>Welcome! We are excited to guide you on this path of classical geometry and posture refinement. Your 1-on-1 private demo class is scheduled for <strong><span class="email-time-val">Monday</span></strong>.</p>
+                            <p>Your calendar invite has been automatically linked. We look forward to meeting you online.</p>
+                        </div>
+                    </div>
+
+                    <div class="mock-device mock-whatsapp hidden" id="mock-whatsapp-device">
+                        <div class="mock-device-header"><i class="fa-brands fa-whatsapp"></i> WhatsApp Preview</div>
+                        <div class="mock-whatsapp-content">
+                            <div class="wa-message bubble-incoming">
+                                <span class="wa-sender">Dhwani Dance Academy</span>
+                                <p>Namaste <span id="wa-to-name">Sarah</span>! 🙏 Your private arena is ready. Here is your direct classroom link: <strong>meet.google.com/dhw-demo-arena</strong>. Your sessions will be hosted in your local time zone.</p>
+                                <span class="wa-time">Just now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="redirect-countdown-container">
+                    <p>Auto-redirecting back to your Personalized Member Dashboard in <strong id="redirect-counter">5</strong> seconds...</p>
+                    <div class="countdown-bar-wrapper">
+                        <div class="countdown-bar" id="countdown-progress"></div>
+                    </div>
+                    <button class="btn btn-primary btn-sm" id="bypass-redirect-btn" style="margin-top: 10px;">Go to Dashboard Now</button>
+                </div>
+            </div>
+            
+        </div>
     </div>
-</section>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-4">
-    <div class="container">
-        <p>&copy; 2024 Dhwani Dance School. All rights reserved.</p>
+    <!-- Student Passwordless Login Modal Backdrop -->
+    <div class="modal-backdrop" id="login-modal-backdrop">
+        <div class="modal-card" style="max-width: 480px;">
+            <button class="modal-close" id="login-modal-close-btn">&times;</button>
+            <div class="modal-step-content" style="padding: 40px 30px;">
+                <h3 class="modal-step-title">Welcome Back</h3>
+                <p class="modal-step-subtitle">Log in to your private Bharatanatyam learning arena.</p>
+                
+                <form id="login-form">
+                    <div class="stripe-input-row" style="text-align: left; margin-bottom: 20px;">
+                        <label class="form-label" style="color: var(--gold); font-size: 0.8rem;">Registered Email Address</label>
+                        <input type="email" class="stripe-input" id="login-email" required placeholder="name@example.com" value="sarah.jenkins@gmail.com" style="margin-top: 6px;">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block btn-lg" id="login-submit-btn">
+                        <span>Access Dashboard</span>
+                    </button>
+                </form>
+                <p class="oauth-assurance" style="margin-top: 25px;"><i class="fa-solid fa-shield-halved"></i> Passwordless secure login via email registration lookup.</p>
+            </div>
+            
+            <div class="spinner-overlay hidden" id="login-spinner">
+                <div class="spinner"></div>
+                <p>Verifying active account session...</p>
+            </div>
+        </div>
     </div>
-</footer>
 
-<!-- Scripts -->
-<script src="static/js/main.js"></script>
+    <!-- Physical Studio Location (Lucknow Coordinates from GitHub) -->
+    <section class="section map-section reveal" id="location">
+        <div class="section-title-container">
+            <div class="section-subtitle">VISIT OUR MAIN STUDIO</div>
+            <h2>Dhwani Dance School Headquarters</h2>
+            <p class="section-desc">Our physical training facility hosting local batches, examinations, and certified examiner assessments.</p>
+        </div>
+        <div class="map-wrapper" style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow); max-width: 1000px; margin: 0 auto;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d16360.411092903945!2d80.9527712!3d26.9220018!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957003bd55a0f%3A0xd4e89ff373d49c69!2sDhwani%20Dance%20School!5e1!3m2!1sen!2sin!4v1727711292722!5m2!1sen!2sin" 
+            width="100%" height="400" style="border:0; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="studio-contact-info" style="text-align: center; margin-top: 30px;">
+            <p style="color: var(--text-muted);"><i class="fa-solid fa-location-dot" style="color: var(--primary-light); margin-right: 8px;"></i> Aliganj, Lucknow, Uttar Pradesh 226024, India</p>
+            <p style="color: var(--text-muted); margin-top: 15px;">
+                <a href="https://wa.me/919453561588" target="_blank" class="btn btn-outline btn-sm" style="text-transform: none;">
+                    <i class="fa-brands fa-whatsapp" style="margin-right: 6px;"></i> Direct Studio Support: +91 9453561588
+                </a>
+            </p>
+        </div>
+    </section>
 
+    <!-- Custom JS -->
+    <script src="app.js"></script>
 </body>
 </html>
